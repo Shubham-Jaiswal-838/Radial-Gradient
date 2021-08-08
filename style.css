@@ -1,0 +1,26 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color:black;
+}
+article {
+  background-image:radial-gradient(at bottom right, red , green, yellow);
+  animation: example 5s linear infinite;
+  width: 60%;
+  height: 50vh;
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+  border-radius: 10px 10px 20px 20px;
+  filter: drop-shadow(0px 0px 10px white);
+}
+@keyframes example {
+  0% {background-image: radial-gradient(at bottom right, red , green, yellow);}
+  50% {background-image: radial-gradient(at bottom left, red , rgb(25, 125, 150), rgb(74, 24, 211));}
+  70% {background-image: radial-gradient(at top left,red , rgb(211, 46, 123), yellow);}
+  100% {background-image: radial-gradient(at top right, red, rgb(241, 245, 241), rgb(31, 179, 11));}
+}
